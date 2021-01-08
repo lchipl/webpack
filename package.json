@@ -14,7 +14,7 @@
     "webpack-dev-server": "^3.11.1"
   },
   "scripts": {
-    "start": "yarn webpack --mode development --watch",
+    "start": "webpack-dev-server --mode development --open",
     "build": "yarn webpack --mode production --watch"
   },
   "browserslist": "> 0.25%, not dead",
