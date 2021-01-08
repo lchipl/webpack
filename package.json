@@ -1,21 +1,27 @@
 {
-  "name": "webpack",
+  "name": "webpack-hn-pagination",
   "version": "1.0.0",
-  "description": "webpack publish treining",
+  "description": "react webpack",
   "main": "index.js",
-  "author": "chipjeny",
+  "repository": "git@github.com:lchipl/webpack.git",
+  "author": "lchipl",
   "license": "MIT",
   "devDependencies": {
-    "clean-webpack-plugin": "^3.0.0",
-    "css-loader": "^5.0.1",
-    "file-loader": "^6.2.0",
-    "html-webpack-plugin": "^4.5.1",
-    "style-loader": "^2.0.0",
+    "@babel/preset-env": "^7.12.11",
+    "@babel/preset-react": "^7.12.10",
     "webpack": "^5.11.1",
-    "webpack-cli": "^4.3.1"
+    "webpack-cli": "^4.3.1",
+    "webpack-dev-server": "^3.11.1"
   },
+  "scripts": {
+    "start": "yarn webpack --mode development --watch",
+    "build": "yarn webpack --mode production --watch"
+  },
+  "browserslist": "> 0.25%, not dead",
   "dependencies": {
-    "emmet": "^2.3.0",
-    "react": "^17.0.1"
+    "@babel/core": "^7.12.10",
+    "@babel/polyfill": "^7.12.1",
+    "react": "^17.0.1",
+    "react-dom": "^17.0.1"
   }
 }
