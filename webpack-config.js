@@ -3,7 +3,7 @@ module.exports = {
   entry: ["@babel/polyfill", "./src/index.jsx"],
   presets: [require("@babel/preset-env")],
   output: {
-    filename: filename(".js"),
+    filename: "bundle.js",
     path: path.resolve(__dirname, "dist"),
   },
   devServer: {
